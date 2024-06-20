@@ -12,19 +12,15 @@
 
 #include <stdio.h>
 
-int main(int argc, char **argv)
+int main(void)
 {
-	int number;
+	int n;
 	printf("Input four digit number: \n");
-	scanf("%d",&number);
+	scanf("%d",&n);
 	
 	int sum  = 0;
-	for (int i = 0; i < 4; ++i)
-	{
-		sum += number % 10;
-		number /= 10;
-	}
-	double average = (double)sum/4;
-	printf("%.2f",average);
+	sum = (n / 1000) + (n % 1000 / 100) + (n % 100 / 10) + (n % 10);
+	double average = (double)sum / 4;
+	printf("%.2f",average); 
 	return 0;
 }
