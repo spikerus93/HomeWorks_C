@@ -23,6 +23,6 @@ int main(int argc, char **argv)
 			max_number = numbers[i];
 		}
 	}
-	printf("Максимальное число = %d", max_number);
+	printf("Наибольшее число = %d", max_number);
 	return 0;
 }
