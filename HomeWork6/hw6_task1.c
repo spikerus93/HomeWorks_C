@@ -20,9 +20,9 @@
 
 void print_num(int num)
 {
-	printf("%d ",num%10);
 	if(num >= 10)
 		print_num(num/10);
+	printf("%d ",num%10);
 }
 
 int main(void)
